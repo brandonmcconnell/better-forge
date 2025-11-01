@@ -97,7 +97,7 @@ jobs:
         run: pnpm analyze
 
       - name: Upload bundle analysis artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: bundle-analysis
           path: apps/**/.next/analyze/*.html
